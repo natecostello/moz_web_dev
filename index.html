@@ -51,6 +51,19 @@
 
       });
 
+      let timeoutPromise = new Promise((resolve, reject) => {
+        setTimeout(function () {
+          resolve('sucess!');
+        }, 2000);
+      });
+
+      timeoutPromise
+      .then((messaage) => {
+        alert(messaage);
+      });
+
+      timeoutPromise.then(console.log);
+
     </script>
   </body>
 </html>
